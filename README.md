@@ -1,3 +1,5 @@
+# OS2Forms Drupal module  [![Build Status](https://travis-ci.org/OS2web/os2web_simplesaml_checklist.svg?branch=8.x)](https://travis-ci.org/OS2web/os2web_simplesaml_checklist)
+
 # Module purpose
 
 The aim of this module is to provide a checklist that simplifies the integration with **simplesamlphp_auth** and **os2web_simplesaml** modules.

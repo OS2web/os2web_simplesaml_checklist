@@ -21,7 +21,7 @@ function os2web_simplesaml_checklist_checklistapi_checklist_info() {
     '#path' => '/admin/config/people/os2web-simplesaml-checklist',
     '#callback' => 'os2web_simplesaml_checklist_checklistapi_checklist_items',
     '#description' => t('Configure your SimpleSAML'),
-    '#help' => '<p>' . t('Check off each SimpleSAML related task as you complete it. Don\'t forget to click the <em>Save</em> button!') . '</p>',
+    '#help' => '<p>' . t("Check off each SimpleSAML related task as you complete it. Don't forget to click the <em>Save</em> button!") . '</p>',
     '#storage' => 'state',
   ];
   return $definitions;
