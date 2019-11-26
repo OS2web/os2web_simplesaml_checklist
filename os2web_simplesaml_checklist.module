@@ -31,6 +31,20 @@ function os2web_simplesaml_checklist_checklistapi_checklist_info() {
  * Implements callback_checklistapi_checklist_items() for example_checklist.
  */
 function os2web_simplesaml_checklist_checklistapi_checklist_items() {
+  $authProviderPlugins = \Drupal::service('plugin.manager.os2web_nemlogin.auth_provider');
+  $plugin_definitions = $authProviderPlugins->getDefinitions();
+//  $plugin_definition = $authProviderPlugins->getDefinition('idp');
+//  dpm($plugin_definitions);
+
+  /* @var \Drupal\os2web_nemlogin\Plugin\AuthProviderInterface $auth_provider */
+  $auth_provider = $authProviderPlugins->createInstance('idp');
+//  dpm($auth_provider);
+  dpm($auth_provider->isInitialized());
+
+  $consent_storages = \Drupal::service('plugin.manager.eu_cookie_compliance.consent_storage');
+  $consent_storage = $consent_storages->createInstance('');
+  //dpm($consent_storage);
+
   $moduleHandler = \Drupal::service('module_handler');
   $installation_full_url = \Drupal::request()->getSchemeAndHttpHost() . base_path();
   $installation_full_https = 'https://' . \Drupal::request()->getHost() . base_path();
