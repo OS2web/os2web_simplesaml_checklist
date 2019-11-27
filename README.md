@@ -1,4 +1,4 @@
-# OS2Forms Drupal module  [![Build Status](https://travis-ci.org/OS2web/os2web_simplesaml_checklist.svg?branch=8.x)](https://travis-ci.org/OS2web/os2web_simplesaml_checklist)
+# OS2Web SimpleSAML checklist Drupal module  [![Build Status](https://travis-ci.org/OS2web/os2web_simplesaml_checklist.svg?branch=8.x)](https://travis-ci.org/OS2web/os2web_simplesaml_checklist)
 
 # Module purpose
 
