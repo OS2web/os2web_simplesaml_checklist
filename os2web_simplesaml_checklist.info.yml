@@ -3,6 +3,8 @@ type: module
 description: SimpleSAML configuration checklist for Drupal
 package: OS2Web
 core: 8.x
+core_version_requirement: ^8 || ^9
+configure: checklistapi.checklists.os2web_simplesaml_checklist
+
 dependencies:
   - drupal:checklistapi
-configure: checklistapi.checklists.os2web_simplesaml_checklist
