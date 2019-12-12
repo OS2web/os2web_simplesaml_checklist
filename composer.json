@@ -4,7 +4,7 @@
     "description": "SimpleSAML configuration checklist for Drupal",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "license": "GPL-2.0+",
+    "license": "EUPL-1.2",
     "require": {
         "drupal/checklistapi": "^1.10"
     }
