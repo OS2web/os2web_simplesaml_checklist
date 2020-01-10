@@ -39,6 +39,10 @@ function os2web_simplesaml_checklist_checklistapi_checklist_items() {
     '#theme' => 'os2forms_simplesaml_checklist_intro_tab',
   ];
 
+  $troubleshooting_tab = [
+    '#theme' => 'os2forms_simplesaml_checklist_troubleshoot_tab',
+  ];
+
   $definitions = [
     // Introduction.
     'introduction' => [
@@ -171,6 +175,12 @@ function os2web_simplesaml_checklist_checklistapi_checklist_items() {
         ],
       ],
     ],
+
+    // Troubleshooting.
+    'troubleshooting' => [
+      '#title' => t('Troubleshooting'),
+      '#description' => \Drupal::service('renderer')->render($troubleshooting_tab),
+    ],
   ];
   return $definitions;
 }
@@ -182,6 +192,9 @@ function os2web_simplesaml_checklist_theme($existing, $type, $theme, $path) {
   return [
     'os2forms_simplesaml_checklist_intro_tab' => [
       'template' => 'os2forms-simplesaml-checklist-intro-tab',
+    ],
+    'os2forms_simplesaml_checklist_troubleshoot_tab' => [
+      'template' => 'os2forms-simplesaml-checklist-troubleshoot-tab',
     ],
   ];
 }
