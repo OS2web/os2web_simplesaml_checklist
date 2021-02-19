@@ -6,6 +6,6 @@
     "prefer-stable": true,
     "license": "EUPL-1.2",
     "require": {
-        "drupal/checklistapi": "^1.10"
+        "drupal/checklistapi": "^2.0"
     }
 }
